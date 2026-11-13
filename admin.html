@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel da autoescola · Aprovado</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1A2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='2' y='2' width='44' height='44' rx='10' fill='%230A6B35'/%3E%3Cpath d='M13 25l7 7 15-16' stroke='%23FFC20E' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261113102820">
+</head>
+<body data-pagina="admin">
+<main id="tela-login" class="login">
+  <form class="login-caixa" id="form-login" novalidate>
+    <a class="marca" href="index.html" data-marca aria-label="Autoescola Aprovado, início"></a>
+    <h1>Painel da autoescola</h1>
+    <p>Pré-matrículas, alunos e etapas, agenda dos instrutores e avisos.</p>
+    <div class="credencial" role="note"><b>Acesso de demonstração</b>Usuário: <code>recepcao</code> · Senha: <code>aprovado</code></div>
+    <div class="campo"><label for="l-user">Usuário</label><input type="text" id="l-user" autocomplete="username" autocapitalize="none"></div>
+    <div class="campo"><label for="l-senha">Senha</label><input type="password" id="l-senha" autocomplete="current-password"></div>
+    <button class="bt bt-verde bt-largo" type="submit">Entrar</button>
+    <div id="login-erro" aria-live="polite"></div>
+    <p style="margin-top:16px"><a href="index.html">Voltar para o site</a></p>
+  </form>
+</main>
+
+<div id="tela-painel" class="claro" hidden>
+  <header class="adm-topo"><div class="embrulho"><b>Aprovado · painel</b><span><a href="index.html" target="_blank">Ver site</a> &nbsp; <button id="sair" type="button">Sair</button></span></div></header>
+  <nav class="adm-abas" role="tablist" aria-label="Seções do painel">
+    <button role="tab" data-aba="pre" aria-selected="true">Pré-matrículas</button>
+    <button role="tab" data-aba="alunos" aria-selected="false">Alunos</button>
+    <button role="tab" data-aba="agenda" aria-selected="false">Agenda</button>
+    <button role="tab" data-aba="avisos" aria-selected="false">Avisos</button>
+    <button role="tab" data-aba="ajustes" aria-selected="false">Ajustes</button>
+  </nav>
+  <main class="adm-corpo"><div class="embrulho" id="corpo"></div></main>
+</div>
+<script src="assets/dados.js?v=20261113102820"></script>
+<script src="assets/site.js?v=20261113102820"></script>
+<script src="assets/admin.js?v=20261113102820"></script>
+</body>
+</html>

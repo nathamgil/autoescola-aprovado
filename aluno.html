@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área do aluno · Autoescola Aprovado</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A6B35">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='2' y='2' width='44' height='44' rx='10' fill='%230A6B35'/%3E%3Cpath d='M13 25l7 7 15-16' stroke='%23FFC20E' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261113102820">
+</head>
+<body data-pagina="aluno">
+<main id="tela-login" class="login">
+  <form class="login-caixa" id="form-login" novalidate>
+    <a class="marca" href="index.html" data-marca aria-label="Autoescola Aprovado, início"></a>
+    <h1>Área do aluno</h1>
+    <p>Suas próximas aulas, as etapas que faltam até a CNH e os avisos da autoescola.</p>
+    <div class="credencial" role="note"><b>Acesso de demonstração</b>Usuário: <code>aluno</code> · Senha: <code>aprovado</code></div>
+    <div class="campo"><label for="l-user">Usuário</label><input type="text" id="l-user" autocomplete="username" autocapitalize="none"></div>
+    <div class="campo"><label for="l-senha">Senha</label><input type="password" id="l-senha" autocomplete="current-password"></div>
+    <button class="bt bt-verde bt-largo" type="submit">Entrar</button>
+    <div id="login-erro" aria-live="polite"></div>
+    <p style="margin-top:16px"><a href="index.html">Voltar para o site</a></p>
+  </form>
+</main>
+
+<div id="tela-aluno" class="claro" hidden>
+  <header class="aluno-cab">
+    <div class="embrulho">
+      <p><a href="index.html" style="color:#fff">← site</a> · <button id="sair" type="button" style="background:none;border:0;color:#fff;font-weight:700;text-decoration:underline;cursor:pointer;font-size:18px">Sair</button></p>
+      <h1 id="ola">Olá!</h1>
+      <p id="resumo-aluno"></p>
+    </div>
+  </header>
+  <main class="embrulho aluno-grade">
+    <section class="cartao" aria-labelledby="t-aulas">
+      <h2 id="t-aulas">Próximas aulas</h2>
+      <div id="aulas"></div>
+    </section>
+    <section class="cartao" aria-labelledby="t-etapas">
+      <h2 id="t-etapas">Seu caminho até a CNH</h2>
+      <ol class="trilha-etapas" id="etapas"></ol>
+      <p id="sim-nota" style="margin:14px 0 0"></p>
+    </section>
+    <section class="cartao" aria-labelledby="t-avisos">
+      <h2 id="t-avisos">Avisos da autoescola</h2>
+      <div id="avisos"></div>
+      <a class="bt bt-verde" id="bt-recepcao" href="#" target="_blank" rel="noopener" style="margin-top:8px">Falar com a recepção</a>
+    </section>
+    <section class="cartao" aria-label="Recado da autoescola" style="padding:0;overflow:hidden">
+      <img src="fotos/pense-positivo.jpg" alt="Arte da Autoescola Aprovado: Pense positivo! É questão de perspectiva. Transforme a dificuldade em oportunidade." loading="lazy" width="1080" height="1080">
+    </section>
+  </main>
+</div>
+<script src="assets/dados.js?v=20261113102820"></script>
+<script src="assets/site.js?v=20261113102820"></script>
+<script src="assets/aluno.js?v=20261113102820"></script>
+</body>
+</html>
